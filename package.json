@@ -8,8 +8,9 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "dev": "node ./server.js",
-    "start": "cross-env NODE_ENV=production node ./server.js"
+    "build": "remix vite:build",
+    "dev": "remix vite:dev",
+    "start": "remix-serve ./build/server/index.js"
   },
   "dependencies": {
     "@remix-run/express": "^2.10.3",

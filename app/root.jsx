@@ -1,7 +1,14 @@
 import { Links, Meta, Outlet, Scripts } from "@remix-run/react";
-import stylesheet from "./tailwind.css?url";
+import styles from "./tailwind.css?url";
 
-export const links = () => [{ rel: "stylesheet", href: stylesheet }];
+export const links = () => [
+  { rel: "stylesheet", href: styles },
+  {
+    rel: "stylesheet",
+    href: "https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap",
+  },
+];
+
 export default function App() {
   return (
     <html>
@@ -10,8 +17,10 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
-        <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <body className="font-notoSans">
+        <h1 className="bg-blue">Hello world!</h1>
+        <h1 className="bg-blue-dark">Hello world!</h1>
+        <h1 className="bg-blue-light">Hello world!</h1>
         <Outlet />
 
         <Scripts />
