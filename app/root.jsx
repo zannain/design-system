@@ -18,11 +18,9 @@ export default function App() {
         <Links />
       </head>
       <body className="font-notoSans">
-        <h1 className="bg-blue">Hello world!</h1>
-        <h1 className="bg-blue-dark">Hello world!</h1>
-        <h1 className="bg-blue-light">Hello world!</h1>
-        <Outlet />
-
+        <div>
+          <Outlet />
+        </div>
         <Scripts />
       </body>
     </html>
