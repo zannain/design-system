@@ -1,6 +1,6 @@
-import { cva } from "class-variance-authority";
+import { cva, VariantProps } from "class-variance-authority";
 
-const badge = cva(
+const badgeVariants = cva(
   ["flex", "items-center", "border-2", "rounded-full", "w-fit"],
   {
     variants: {
@@ -23,7 +23,7 @@ const badge = cva(
     },
   }
 );
-
-export default function Badge({ className, intent, size }) {
-  return <div className={badge({ intent, size, className })}>Label</div>;
+export interface BadgeProps extends VariantProps<typeof badgeVariants> {}
+export default function Badge({ intent, size }: BadgeProps) {
+  return <div className={badgeVariants({ intent, size })}>Label</div>;
 }
