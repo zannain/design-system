@@ -5,11 +5,11 @@ const badgeVariants = cva(
   {
     variants: {
       intent: {
-        neutral: ["text-neutral", "border-neutral-light", "bg-grey-light"],
-        error: ["text-red-dark", "border-red", "bg-red-light"],
-        warning: ["text-yellow-dark", "border-yellow", "bg-yellow-light"],
-        success: ["text-green-dark", "border-green", "bg-green-light"],
-        brand: ["text-blue-dark", "border-blue", "bg-blue-light"],
+        neutral: ["text-neutral", "border-neutral-light", "bg-grey"],
+        error: ["text-error-dark", "border-error", "bg-error-light"],
+        warning: ["text-warning-dark", "border-warning", "bg-warning-light"],
+        success: ["text-success-dark", "border-success", "bg-success-light"],
+        brand: ["text-brand-dark", "border-brand", "bg-brand-light"],
       },
       size: {
         small: ["text-xs", "px-1.5", "py-0.5"],

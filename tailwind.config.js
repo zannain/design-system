@@ -3,42 +3,45 @@ const colors = require("tailwindcss/colors");
 export default {
   content: ["./app/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    colors: {
-      white: colors.white,
-      blue: {
-        dark: "#4338ca",
-        DEFAULT: "#c7d2fe",
-        light: "#eef2ff",
-      },
-      green: {
-        dark: "#15803d",
-        DEFAULT: "#bbf7d0",
-        light: "#f0fdf4",
-      },
-      yellow: {
-        dark: "#a16207",
-        DEFAULT: "#fef08a",
-        light: "#fefce8",
-      },
-      red: {
-        dark: "#dc2626",
-        DEFAULT: "#fecaca",
-        light: "#fef2f2",
-      },
-      neutral: {
-        dark: "#171717",
-        DEFAULT: "#52525b",
-        light: "#e5e5e5",
-      },
-      grey: {
-        light: "#f9fafb",
-        DEFAULT: "#e5e7eb",
-        dark: "#9ca3af",
+    extend: {
+      colors: {
+        white: colors.white,
+        brand: {
+          dark: colors.indigo["700"],
+          DEFAULT: colors.indigo["200"],
+          light: colors.indigo["50"],
+          emphasize: colors.indigo["800"],
+        },
+        success: {
+          dark: colors.green["700"],
+          DEFAULT: colors.green["200"],
+          light: colors.green["50"],
+        },
+        warning: {
+          dark: colors.amber["700"],
+          DEFAULT: colors.amber["200"],
+          light: colors.amber["50"],
+        },
+        error: {
+          dark: colors.red["600"],
+          DEFAULT: colors.red["200"],
+          light: colors.red["50"],
+          emphasize: colors.red["700"],
+        },
+        neutral: {
+          dark: colors.neutral["900"],
+          DEFAULT: colors.neutral["600"],
+          light: colors.neutral["200"],
+          emphasize: colors.neutral["50"],
+        },
+        gray: colors.gray["50"],
       },
     },
     fontSize: {
       xs: ["12px", { lineHeight: "16px" }],
       sm: ["14px", { lineHeight: "20px" }],
+      lg: ["16px", { lineHeight: "24px" }],
+      xxl: ["18px", { lineHeight: "28px" }],
     },
     fontFamily: {
       notoSans: "'Noto Sans', sans-serif",
