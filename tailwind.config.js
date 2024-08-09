@@ -33,6 +33,8 @@ export default {
           DEFAULT: colors.neutral["600"],
           light: colors.neutral["200"],
           emphasize: colors.neutral["50"],
+          disabled: colors.neutral["400"],
+          disabled_bg: colors.neutral["100"],
         },
         gray: colors.gray["50"],
       },

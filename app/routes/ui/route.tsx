@@ -26,33 +26,10 @@ export default function Badges() {
       </div>
       <div className="flex mt-4 gap-4 items-center">
         <Button intent="primary" size="medium"></Button>
+        <Button intent="primary" size="medium" disabled></Button>
         <Button intent="primary" size="large"></Button>
         <Button intent="primary" size="xl"></Button>
         <Button intent="primary" size="xxl"></Button>
-      </div>
-      <div className="flex mt-4 gap-4 items-center">
-        <Button intent="secondary" size="medium"></Button>
-        <Button intent="secondary" size="large"></Button>
-        <Button intent="secondary" size="xl"></Button>
-        <Button intent="secondary" size="xxl"></Button>
-      </div>
-      <div className="flex mt-4 gap-4 items-center">
-        <Button intent="tertiary" size="medium"></Button>
-        <Button intent="tertiary" size="large"></Button>
-        <Button intent="tertiary" size="xl"></Button>
-        <Button intent="tertiary" size="xxl"></Button>
-      </div>
-      <div className="flex mt-4 gap-4 items-center">
-        <Button intent="link" size="medium"></Button>
-        <Button intent="link" size="large"></Button>
-        <Button intent="link" size="xl"></Button>
-        <Button intent="link" size="xxl"></Button>
-      </div>
-      <div className="flex mt-4 gap-4 items-center">
-        <Button intent="destructive" size="medium"></Button>
-        <Button intent="destructive" size="large"></Button>
-        <Button intent="destructive" size="xl"></Button>
-        <Button intent="destructive" size="xxl"></Button>
       </div>
     </div>
   );

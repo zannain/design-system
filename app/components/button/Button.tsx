@@ -4,7 +4,16 @@ import React from "react";
 const buttonVariants = cva(["flex", "rounded"], {
   variants: {
     intent: {
-      primary: ["text-white", "bg-brand-dark", "hover:bg-brand-emphasize"],
+      primary: [
+        "text-white",
+        "bg-brand-dark",
+        "hover:bg-brand-emphasize",
+        "focus:outline-none",
+        "focus:ring",
+        "focus:ring-[#E9EAFC]",
+        "disabled:text-neutral-disabled",
+        "disabled:bg-neutral-disabled_bg",
+      ],
       secondary: [
         "text-neutral-dark",
         "bg-white",
